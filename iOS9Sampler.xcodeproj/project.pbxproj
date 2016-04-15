@@ -67,6 +67,7 @@
 		8AF73FAA1BA051E100E3783E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF73FA91BA051E100E3783E /* PhotosViewController.swift */; };
 		8AF73FAC1BA051EC00E3783E /* Photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF73FAB1BA051EC00E3783E /* Photos.storyboard */; };
 		8AF73FAE1BA0529600E3783E /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF73FAD1BA0529600E3783E /* PhotosCell.swift */; };
+		8C95E766A9A6679FD56BE04E /* Pods_iOS9Sampler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB1D0E9F98C13FC2784EF7 /* Pods_iOS9Sampler.framework */; };
 		BD490BD71BDCDF530066B403 /* ReplayKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD490BD51BDCDF530066B403 /* ReplayKitViewController.swift */; };
 		BD490BDA1BDCDF7A0066B403 /* ReplayKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD490BD91BDCDF7A0066B403 /* ReplayKit.storyboard */; };
 		BDD0D4A81BB2E6FF00995959 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0D4A61BB2E6FF00995959 /* ContactsViewController.swift */; };
@@ -120,6 +121,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11EB1D0E9F98C13FC2784EF7 /* Pods_iOS9Sampler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS9Sampler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2379174F9C72AD34FB3D3365 /* Pods-iOS9Sampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS9Sampler.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS9Sampler/Pods-iOS9Sampler.release.xcconfig"; sourceTree = "<group>"; };
+		4D62B9E4423B07FAD14589D1 /* Pods-iOS9Sampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS9Sampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS9Sampler/Pods-iOS9Sampler.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0714B21BA46CF300A1CC22 /* SearchAPIsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPIsViewController.swift; sourceTree = "<group>"; };
 		8A0714B41BA46D0500A1CC22 /* SearchAPIs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchAPIs.storyboard; sourceTree = "<group>"; };
 		8A2AC86A1BB91A3800C05128 /* ForceTouch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForceTouch.storyboard; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C95E766A9A6679FD56BE04E /* Pods_iOS9Sampler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C8F0F6BB84036C3B3C3D28F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D62B9E4423B07FAD14589D1 /* Pods-iOS9Sampler.debug.xcconfig */,
+				2379174F9C72AD34FB3D3365 /* Pods-iOS9Sampler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DDF3544696E02B329132054 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11EB1D0E9F98C13FC2784EF7 /* Pods_iOS9Sampler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A0714B61BA47DE100A1CC22 /* SearchAPIs */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +555,8 @@
 				8AD5D7751B295E8C001924F0 /* iOS9SamplerUITests */,
 				8A2AC8781BB91E2200C05128 /* libs */,
 				8AD5D7541B295E8C001924F0 /* Products */,
+				7C8F0F6BB84036C3B3C3D28F /* Pods */,
+				7DDF3544696E02B329132054 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -660,10 +684,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AD5D77B1B295E8C001924F0 /* Build configuration list for PBXNativeTarget "iOS9Sampler" */;
 			buildPhases = (
+				77FB0536B79FF1DDCA506002 /* 📦 Check Pods Manifest.lock */,
 				8AD5D74F1B295E8C001924F0 /* Sources */,
 				8AD5D7501B295E8C001924F0 /* Frameworks */,
 				8AD5D7511B295E8C001924F0 /* Resources */,
 				8A9078C71B948F05000518C3 /* Embed App Extensions */,
+				4F1F7CA795FFF49F6486C3AC /* 📦 Embed Pods Frameworks */,
+				D38D608FD51633AAAC4AC966 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -828,6 +855,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F1F7CA795FFF49F6486C3AC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS9Sampler/Pods-iOS9Sampler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77FB0536B79FF1DDCA506002 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D38D608FD51633AAAC4AC966 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS9Sampler/Pods-iOS9Sampler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A9078C81B949A5F000518C3 /* Sources */ = {
@@ -1075,6 +1150,7 @@
 		};
 		8AD5D77C1B295E8C001924F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D62B9E4423B07FAD14589D1 /* Pods-iOS9Sampler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1090,6 +1166,7 @@
 		};
 		8AD5D77D1B295E8C001924F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2379174F9C72AD34FB3D3365 /* Pods-iOS9Sampler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
