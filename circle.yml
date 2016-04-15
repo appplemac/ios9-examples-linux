@@ -2,8 +2,10 @@ dependencies:
   pre:
     - "sudo apt-add-repository -y ppa:george-edison55/precise-backports"
     - sudo apt-get update; sudo apt-get remove cmake
-    - sudo apt-get install cmake libxml2-dev ninja-build gcc-5
-    - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 10
+    - sudo apt-get install cmake libxml2-dev ninja-build gcc-5 g++-5 c++-5
+    - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 20
+    - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 20
+    - sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/c++-5 20
     - if [[ ! -d xcbuild ]] ; then
       git clone https://github.com/facebook/xcbuild
       && cd xcbuild && git submodule update --init
