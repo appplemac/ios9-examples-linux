@@ -12,3 +12,4 @@ test:
     - ./xcbuild/build/xcbuild -workspace 'iOS9Sampler.xcworkspace' -scheme 'iOS9Sampler'
       -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
       CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= build
+
