@@ -1,5 +1,14 @@
-machine:
-  xcode:
-    version: "7.3"
-  environment:
-    XCODE_WORKSPACE: "iOS9Sampler.xcworkspace"
+dependencies:
+  pre:
+    - if [[ ! -d xcbuild ]] ; then
+      git clone https://github.com/facebook/xcbuild
+      && cd xcbuild && git submodule update --init
+      && make ; fi
+  cache_directories:
+    - xcbuild
+
+test:
+  override:
+    - ./xcbuild/build/xcbuild -workspace 'iOS9Sampler.xcworkspace' -scheme 'iOS9Sampler'
+      -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+      CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE=
