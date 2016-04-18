@@ -7,13 +7,13 @@ dependencies:
 
     - sudo apt-get update
     - sudo aptitude install -y g++-5
-    - sudo apt-get install cmake libxml2-dev ninja-build clang-3.7 patch
+    - sudo apt-get install cmake libxml2-dev ninja-build clang-3.7 patch zlib
     - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 20
     - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 20
     - sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/cpp-5 20
     - git clone https://github.com/tpoechtrager/osxcross
     - cd osxcross/tarballs && wget https://s3.amazonaws.com/circle-downloads/iPhoneSimulator.sdk.tar.xz
-      && tar xzf iPhoneSimulator.sdk.tar.xz
+      && tar xJf iPhoneSimulator.sdk.tar.xz
     - cd osxcross && UNATTENDED=1 ./build.sh
     - ls osxcross
 
